@@ -134,7 +134,7 @@
   hyfetch
   libsForQt5.kdeconnect-kde
   meslo-lgs-nf
-  microcodeAmd
+  microcodeIntel
   neofetch
   nerdfonts
   nfs-utils
