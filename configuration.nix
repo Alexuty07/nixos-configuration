@@ -51,7 +51,7 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.xserver.desktopManager.plasma6.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Enable and configure SDDM
   services.xserver.displayManager.sddm.enable = true;
