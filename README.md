@@ -12,9 +12,11 @@
 <hr/>
 
 ## Information
+ - Channel: Unstable
  - Bootloader: GRUB
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
    - Display Manager: SDDM
  - Keymaps: English (US), and Spanish (ES)
  - Browser: Librewolf
+ - Terminal: Konsole & Yakuake
