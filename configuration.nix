@@ -88,6 +88,10 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
 
+  # Enable Virtualization with virt-manager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alexuty = {
     isNormalUser = true;
@@ -137,7 +141,6 @@
   htop
   hyfetch
   libsForQt5.kdeconnect-kde
-  libvirt
   meslo-lgs-nf
   microcodeIntel
   neofetch
@@ -149,7 +152,6 @@
   qmk
   syncthing
   syncthingtray
-  virt-manager
   xclip
   yakuake
   zsh
