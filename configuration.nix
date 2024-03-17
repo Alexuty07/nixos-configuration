@@ -26,6 +26,7 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -85,7 +86,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alexuty = {
@@ -116,7 +117,6 @@
       tldr
       unipicker
       vesktop
-      virt-manager-qt
       vlc
       waydroid
       ytmdesktop
@@ -137,16 +137,19 @@
   htop
   hyfetch
   libsForQt5.kdeconnect-kde
+  libvirt
   meslo-lgs-nf
   microcodeIntel
   neofetch
   nerdfonts
   nfs-utils
   papirus-icon-theme
-  qemu
+  qemu_full
+  qemu_kvm
   qmk
   syncthing
   syncthingtray
+  virt-manager
   xclip
   yakuake
   zsh
