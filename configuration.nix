@@ -148,7 +148,6 @@
   nfs-utils
   papirus-icon-theme
   qemu_full
-  qemu_kvm
   qmk
   syncthing
   syncthingtray
