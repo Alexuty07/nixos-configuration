@@ -132,10 +132,7 @@
       retroarch
       signal-desktop
       steam
-      tailscale
       telegram-desktop
-      tldr
-      unipicker
       vesktop
       vlc
       waydroid
@@ -167,6 +164,9 @@
   qmk
   syncthing
   syncthingtray
+  tailscale
+  tldr
+  unipicker
   xclip
   yakuake
   zsh
