@@ -16,7 +16,7 @@
  - Bootloader: GRUB
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
-   - Display Manager: SDDM
+   - Display Manager: SDDM (Wayland)
  - Keymaps: English (US), and Spanish (ES)
  - Browser: Librewolf
  - Terminal: Konsole & Yakuake
