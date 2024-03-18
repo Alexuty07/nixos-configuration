@@ -13,6 +13,8 @@
 
 ## Information
  - Channel: Unstable
+ - Auto-upgrade: Yes
+ - Garbage Collection: Weekly
  - Bootloader: GRUB
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
