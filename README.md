@@ -5,7 +5,8 @@
   Álex's NixOS Configuration
 </h1>
 <p align="center">
-  Inspired by <a href=https://github.com/sioodmy/dotfiles>sioodmy's dotfiles</a>
+  Inspired by <a href=https://github.com/sioodmy/dotfiles>sioodmy's dotfiles</a><br>
+  Thanks to <a href=https://github.com/vimjoyer>vimjoyer</a> for many of the starter configurations and excellent tutorial videos.
 <br><br>
           
   <a href="https://github.com/sioodmy/dotfiles/">
