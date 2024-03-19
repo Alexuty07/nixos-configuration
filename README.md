@@ -9,7 +9,7 @@
   Thanks to <a href=https://github.com/vimjoyer>vimjoyer</a> for many of the starter configurations and excellent tutorial videos.
 <br><br>
           
-  <a href="https://github.com/sioodmy/dotfiles/">
+  <a href="https://github.com/Alexuty07/nixos-configuration">
       <img src="https://img.shields.io/github/repo-size/Alexuty07/nixos-configuration?color=5276C2&labelColor=303446&style=for-the-badge">
    </a>
 </p>
