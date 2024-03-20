@@ -16,7 +16,6 @@
 
 ## Information
  - Channel: Unstable
- - Auto-upgrade: Yes
  - Garbage Collection: Weekly
  - Bootloader: GRUB
  - Shell: zsh (with p10k)
