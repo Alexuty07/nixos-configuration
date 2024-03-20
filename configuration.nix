@@ -132,6 +132,7 @@
       retroarch
       signal-desktop
       steam
+      tailscale-systray
       telegram-desktop
       vesktop
       vlc
