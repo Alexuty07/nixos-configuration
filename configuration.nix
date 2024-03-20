@@ -15,11 +15,11 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-  # Autoupgrade
-  system.autoUpgrade = {
-    enable = true;
-    channel = "https://nixos.org/channels/nixos-unstable";
-  };
+  # Autoupgrade (currently handled by flake.nix)
+#system.autoUpgrade = {
+#   enable = true;
+#   channel = "https://nixos.org/channels/nixos-unstable";
+# };
 
   # Garbage collection
   nix = {
