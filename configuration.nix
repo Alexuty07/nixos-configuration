@@ -168,6 +168,7 @@
   tailscale
   tldr
   unipicker
+  wget
   xclip
   yakuake
   zsh
