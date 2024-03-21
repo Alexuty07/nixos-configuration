@@ -11,7 +11,7 @@
           
   <a href="https://github.com/Alexuty07/nixos-configuration">
       <img src="https://img.shields.io/github/repo-size/Alexuty07/nixos-configuration?color=5276C2&labelColor=303446&style=for-the-badge">
-   </a>
+   </a><br><br>This is my personal configuration. It won't work for you unless you modify it first, since it is tailored to my laptop and my setup using encryption and all that.
 </p>
 
 ## Information
