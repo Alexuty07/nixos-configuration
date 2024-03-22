@@ -1,4 +1,4 @@
-# Edit this configuration file to define what should be installed on
+# Edit this configuration file to define what should be installed o
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -10,16 +10,17 @@
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  # Bootloader. (UEFI)
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-  # Autoupgrade (currently handled by flake.nix)
-#system.autoUpgrade = {
-#   enable = true;
-#   channel = "https://nixos.org/channels/nixos-unstable";
-# };
+  boot.initrd.luks.devices."luks-1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0".device = "/dev/disk/by-uuid/1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0";
+
+  # Autoupgrade (can be handled by flake.nix)
+  system.autoUpgrade = {
+    enable = true;
+    channel = "https://nixos.org/channels/nixos-unstable";
+  };
 
   # Garbage collection
   nix = {
@@ -32,8 +33,8 @@
   };
 
   networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
+programs.partition-manager.enable = true;
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -45,6 +46,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Enable Bluetooth
+  hardware.bluetooth.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -72,8 +76,15 @@
 
   # Enable and configure SDDM
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.wayland.enable = true;
+# services.xserver.displayManager.sddm.wayland.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
+  services.xserver.displayManager.sddm.autoLogin.relogin = true;
+# services.xserver.displayManager.sddm.settings = {
+#   Autologin = {
+#     Session = "plasma.desktop";
+#     User = "alexuty";
+#   };
+# };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -83,6 +94,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -141,38 +153,41 @@
     ];
   };
 
+  # Enable automatic login for the user.
+ # services.getty.autologinUser = "alexuty";
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
   # Enable nix command and flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+
   environment.systemPackages = with pkgs; [
-  android-tools
-  filelight
-  fortune-kind
-  git
-  htop
-  hyfetch
-  libsForQt5.kdeconnect-kde
-  meslo-lgs-nf
-  microcodeIntel
-  neofetch
-  nerdfonts
-  nfs-utils
-  papirus-icon-theme
-  qemu_full
-  qmk
-  syncthing
-  syncthingtray
-  tailscale
-  tldr
-  unipicker
-  wget
-  xclip
-  yakuake
-  zsh
-  zsh-powerlevel10k
+    android-tools
+    filelight
+    fortune-kind
+    git
+    htop
+    hyfetch
+    libsForQt5.kdeconnect-kde
+    meslo-lgs-nf
+    microcodeIntel
+    neofetch
+    nerdfonts
+    nfs-utils
+    papirus-icon-theme
+    qemu_full
+    qmk
+    syncthing
+    syncthingtray
+    tailscale
+    tldr
+    unipicker
+    wget
+    xclip
+    yakuake
+    zsh
+    zsh-powerlevel10k
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
