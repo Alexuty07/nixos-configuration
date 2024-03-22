@@ -16,7 +16,7 @@
 
   boot.initrd.luks.devices."luks-1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0".device = "/dev/disk/by-uuid/1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0";
 
-  # Autoupgrade (can be handled by flake.nix)
+  # Autoupgrade
   system.autoUpgrade = {
     enable = true;
     channel = "https://nixos.org/channels/nixos-unstable";
@@ -34,7 +34,9 @@
 
   networking.hostName = "nixos"; # Define your hostname.
 
-programs.partition-manager.enable = true;
+  # Enable KDE Partition Manager
+  programs.partition-manager.enable = true;
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -74,17 +76,9 @@ programs.partition-manager.enable = true;
   # Enable the KDE Plasma Desktop Environment.
   services.desktopManager.plasma6.enable = true;
 
-  # Enable and configure SDDM
-  services.xserver.displayManager.sddm.enable = true;
-# services.xserver.displayManager.sddm.wayland.enable = true;
-  services.xserver.displayManager.sddm.autoNumlock = true;
-  services.xserver.displayManager.sddm.autoLogin.relogin = true;
-# services.xserver.displayManager.sddm.settings = {
-#   Autologin = {
-#     Session = "plasma.desktop";
-#     User = "alexuty";
-#   };
-# };
+  # Automatic login (to avoid entering a second pasword after LUKS decryption)
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "alexuty";
 
   # Configure keymap in X11
   services.xserver.xkb = {
