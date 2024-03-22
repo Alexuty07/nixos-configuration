@@ -25,9 +25,8 @@
 </p>
 
 ## Information
- - Channel: Unstable
  - Garbage Collection: Weekly
- - Bootloader: GRUB
+ - Bootloader: systemd-boot
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
  - Keymaps: ANSI QWERTY English (US), and ISO QWERTY Spanish (ES). Switch with Meta + Space
