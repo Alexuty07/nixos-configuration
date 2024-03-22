@@ -128,6 +128,7 @@
       kate
       kdenlive
       keepassxc
+      libqalculate
       libreoffice
       librewolf
       monero-gui
