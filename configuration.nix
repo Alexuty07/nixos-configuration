@@ -40,6 +40,9 @@
   # WLAN
   networking.networkmanager.enable = true;
 
+  # Tailscale
+  services.tailscale.enable = true;
+
   # Bluetooth
   hardware.bluetooth.enable = true;
 
@@ -142,7 +145,9 @@
     git
     htop
     hyfetch
-    libsForQt5.kdeconnect-kde
+    kdePackages.kdeconnect-kde   
+   #libsForQt5.kdeconnect-kde
+    logitech-udev-rules
     meslo-lgs-nf
     microcodeIntel
     neofetch
@@ -153,6 +158,7 @@
     qmk
     syncthing
     syncthingtray
+    solaar
     tailscale
     tldr
     unipicker
