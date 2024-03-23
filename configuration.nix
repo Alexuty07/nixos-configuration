@@ -138,6 +138,7 @@
   # Enable nix command and flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # System packages
   environment.systemPackages = with pkgs; [
     android-tools
     filelight
@@ -146,7 +147,6 @@
     htop
     hyfetch
     kdePackages.kdeconnect-kde   
-   #libsForQt5.kdeconnect-kde
     logitech-udev-rules
     meslo-lgs-nf
     microcodeIntel
