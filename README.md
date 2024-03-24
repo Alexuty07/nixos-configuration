@@ -32,3 +32,6 @@
  - Keymaps: ANSI QWERTY English (US), and ISO QWERTY Spanish (ES). Switch with Meta + Space
  - Browser: Librewolf
  - Terminal: Konsole & Yakuake
+
+### Todo
+ - Split the config into multiple modules such as one for programs, one for services, one for system settings, etc.
