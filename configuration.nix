@@ -123,7 +123,6 @@
       qbittorrent-qt5
       retroarch
       signal-desktop
-      steam
       tailscale-systray
       telegram-desktop
       vesktop
@@ -132,6 +131,9 @@
       ytmdesktop
     ];
   };
+
+  # Steam
+  programs.steam.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
