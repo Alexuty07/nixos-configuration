@@ -35,3 +35,4 @@
 
 ### Todo
  - Split the config into multiple modules such as one for programs, one for services, one for system settings, etc.
+ - Start using homemanager to manage plasma and other programs
