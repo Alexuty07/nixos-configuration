@@ -148,6 +148,7 @@
     htop
     hyfetch
     kdePackages.kdeconnect-kde   
+    localsend
     logitech-udev-rules
     meslo-lgs-nf
     microcodeIntel
@@ -172,6 +173,18 @@
 
   # OpenSSH daemon
   services.openssh.enable = true;
+
+  networking.firewall = { 
+    enable = true;
+    allowedTCPPorts = [ 53317 ]; # LocalSend
+    allowedTCPPortRanges = [ 
+      { from = 1714; to = 1764; } # KDE Connect
+    ];  
+    allowedUDPPorts = [ 53317 ]; # LocalSend
+    allowedUDPPortRanges = [ 
+      { from = 1714; to = 1764; } # KDE Connect
+    ];  
+  };  
 
   system.stateVersion = "23.11";
 
