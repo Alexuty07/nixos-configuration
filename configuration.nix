@@ -108,8 +108,11 @@
       anki-bin
       audacity
       electron-mail
+      galaxy-buds-client
       gimp
       gitkraken
+      gummi
+     #itch (has a broken dependency right now, try later)
       kate
       kdenlive
       keepassxc
@@ -125,6 +128,7 @@
       signal-desktop
       tailscale-systray
       telegram-desktop
+      texliveFull      
       vesktop
       vlc
       waydroid
