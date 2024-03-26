@@ -22,7 +22,6 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 7d";
     };
   };
 
@@ -107,12 +106,13 @@
     packages = with pkgs; [
       anki-bin
       audacity
+      corefonts
       electron-mail
       galaxy-buds-client
       gimp
       gitkraken
       gummi
-     #itch (has a broken dependency right now, try later)
+     #itch (broken right now, try later)
       kate
       kdenlive
       keepassxc
