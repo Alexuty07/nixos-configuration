@@ -101,7 +101,7 @@
   # User account. Set a password with ‘passwd’
   users.users.alexuty = {
     isNormalUser = true;
-    description = "Alex Santiago";
+    description = "Álex Santiago";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       anki-bin
