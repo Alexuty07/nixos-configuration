@@ -125,10 +125,11 @@
       qalculate-qt
       qbittorrent-qt5
       retroarch
-      signal-desktop
+      signal-desktop-beta
       tailscale-systray
       telegram-desktop
       texliveFull      
+      timer
       vesktop
       vlc
       waydroid
