@@ -120,6 +120,7 @@
       librewolf
       monero-gui
       obsidian
+      openutau
       prismlauncher
       protonvpn-gui
       qalculate-qt
