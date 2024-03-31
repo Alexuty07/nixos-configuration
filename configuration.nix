@@ -110,7 +110,6 @@
       galaxy-buds-client
       gimp
       gitkraken
-      gnupg
       gummi
      #itch (broken right now, try later)
       kate
@@ -165,7 +164,7 @@
     nerdfonts
     nfs-utils
     papirus-icon-theme
-    qemu_full
+    qemu_kvm
     qmk
     syncthing
     syncthingtray
@@ -181,6 +180,10 @@
 
   # OpenSSH daemon
   services.openssh.enable = true;
+
+  # GnuPG
+  programs.gnupg.agent.enable = true;
+  services.pcscd.enable = true;
 
   networking.firewall = {
     enable = true;
