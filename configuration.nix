@@ -35,7 +35,7 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-  
+
 
   # WLAN
   networking.networkmanager.enable = true;
@@ -74,7 +74,7 @@
   # Keyboard settings (xkb)
   services.xserver.xkb = {
     layout = "us,es";
-    options = "eurosign:e/*,compose:rctl*/,grp:win_space_toggle";
+    options = "eurosign:e,grp:win_space_toggle";
   };
 
   # CUPS
@@ -110,6 +110,7 @@
       galaxy-buds-client
       gimp
       gitkraken
+      gnupg
       gummi
      #itch (broken right now, try later)
       kate
@@ -129,7 +130,7 @@
       signal-desktop-beta
       tailscale-systray
       telegram-desktop
-      texliveFull      
+      texliveFull
       timer
       vesktop
       vlc
@@ -155,7 +156,7 @@
     git
     htop
     hyfetch
-    kdePackages.kdeconnect-kde   
+    kdePackages.kdeconnect-kde
     localsend
     logitech-udev-rules
     meslo-lgs-nf
@@ -181,17 +182,17 @@
   # OpenSSH daemon
   services.openssh.enable = true;
 
-  networking.firewall = { 
+  networking.firewall = {
     enable = true;
     allowedTCPPorts = [ 53317 ]; # LocalSend
-    allowedTCPPortRanges = [ 
+    allowedTCPPortRanges = [
       { from = 1714; to = 1764; } # KDE Connect
-    ];  
+    ];
     allowedUDPPorts = [ 53317 ]; # LocalSend
-    allowedUDPPortRanges = [ 
+    allowedUDPPortRanges = [
       { from = 1714; to = 1764; } # KDE Connect
-    ];  
-  };  
+    ];
+  };
 
   system.stateVersion = "23.11";
 
