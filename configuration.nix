@@ -183,6 +183,9 @@
   # OpenSSH daemon
   services.openssh.enable = true;
 
+  # Android Containers
+  virtualisation.waydroid.enable = true;
+
   # GnuPG
   programs.gnupg.agent.enable = true;
   services.pcscd.enable = true;
