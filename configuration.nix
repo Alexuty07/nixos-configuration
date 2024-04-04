@@ -119,7 +119,7 @@
       keepassxc
       libqalculate
       libreoffice
-      librewolf
+      meslo-lgs-nf
       monero-gui
       obsidian
       openutau
@@ -161,7 +161,6 @@
     kdePackages.kdeconnect-kde
     localsend
     logitech-udev-rules
-    meslo-lgs-nf
     microcodeIntel
     neofetch
     nerdfonts
