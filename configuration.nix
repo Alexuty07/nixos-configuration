@@ -107,6 +107,8 @@
       anki-bin
       audacity
       corefonts
+      element
+      firefox
       galaxy-buds-client
       gimp
       gitkraken
@@ -150,6 +152,7 @@
   # System packages
   environment.systemPackages = with pkgs; [
     android-tools
+    fastfetch
     filelight
     fortune-kind
     git
