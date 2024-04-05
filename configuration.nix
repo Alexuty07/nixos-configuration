@@ -75,7 +75,7 @@
   # Keyboard settings (xkb)
   services.xserver.xkb = {
     layout = "us,es";
-    options = "eurosign:e,grp:win_space_toggle";
+    options = "grp:win_space_toggle";
   };
 
   # CUPS
