@@ -113,6 +113,7 @@
       galaxy-buds-client
       gimp
       gitkraken
+      gpa
       gummi
      #itch (broken right now, try later)
       kate
@@ -137,7 +138,6 @@
       vesktop
       vlc
       waydroid
-      ytmdesktop
     ];
   };
 
