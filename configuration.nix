@@ -113,11 +113,11 @@
       galaxy-buds-client
       gimp
       gitkraken
-      gpa
       gummi
      #itch (broken right now, try later)
       kate
       kdenlive
+      kdePackages.kleopatra
       keepassxc
       libqalculate
       libreoffice
