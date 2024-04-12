@@ -126,6 +126,7 @@
       obsidian
       openutau
       prismlauncher
+      protonmail-desktop
       protonvpn-gui
       qalculate-qt
       qbittorrent-qt5
@@ -133,6 +134,7 @@
       signal-desktop-beta
       tailscale-systray
       telegram-desktop
+      tetrio-desktop
       texliveFull
       timer
       vesktop
