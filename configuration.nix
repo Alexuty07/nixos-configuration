@@ -74,7 +74,7 @@
 
   # Keyboard settings (xkb)
   services.xserver.xkb = {
-    layout = "us,es";
+    layout = "es,us";
     options = "grp:win_space_toggle";
   };
 
