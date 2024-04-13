@@ -78,8 +78,14 @@
     options = "grp:win_space_toggle";
   };
 
-  # CUPS
+  # Printing
   services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+  services.printing.drivers = [ pkgs.hplipWithPlugin ];
 
   # Pipewire
   sound.enable = true;
