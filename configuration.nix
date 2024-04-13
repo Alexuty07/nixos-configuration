@@ -12,7 +12,8 @@
   boot.initrd.luks.devices."luks-1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0".device = "/dev/disk/by-uuid/1ec6d49d-7a0b-4ac9-aaea-e8efc1c75ac0";
 
   # Laptop power management
-  services.thermald.enable = true
+  services.power-profiles-daemon.enable = false;
+  services.thermald.enable = true;
   services.tlp = {
       enable = true;
       settings = {
