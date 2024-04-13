@@ -69,8 +69,8 @@
   services.desktopManager.plasma6.enable = true;
 
   # Automatic login (to avoid entering a second pasword)
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "alexuty";
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "alexuty";
 
   # Keyboard settings (xkb)
   services.xserver.xkb = {
@@ -82,7 +82,7 @@
   services.printing.enable = true;
   services.avahi = {
     enable = true;
-    nssmdns = true;
+    nssmdns4 = true;
     openFirewall = true;
   };
   services.printing.drivers = [ pkgs.hplipWithPlugin ];
