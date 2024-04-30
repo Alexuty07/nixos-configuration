@@ -127,6 +127,7 @@
   # Virtualization with virt-manager
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   # User account. Set a password with ‘passwd’
   users.users.alexuty = {
