@@ -101,6 +101,9 @@
     options = "grp:win_space_toggle";
   };
 
+  # Keyboard settings (console)
+  console.keyMap = "es";
+
   # Printing
   services.printing.enable = true;
   services.avahi = {
