@@ -108,7 +108,11 @@
     nssmdns4 = true;
     openFirewall = true;
   };
-  services.printing.drivers = [ pkgs.hplipWithPlugin ];
+  services.printing.drivers = [
+    pkgs.hplipWithPlugin
+    pkgs.gutenprint
+    pkgs.gutenprintBin
+  ];
 
   # Pipewire
   sound.enable = true;
