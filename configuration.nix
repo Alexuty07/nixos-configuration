@@ -141,6 +141,7 @@
       gitkraken
       gummi
      #itch (broken right now, try later)
+      inkscape
       kate
       kdenlive
       kdePackages.kleopatra
@@ -157,6 +158,7 @@
       qalculate-qt
       qbittorrent-qt5
       retroarch
+      session-desktop
       signal-desktop-beta
       tailscale-systray
       telegram-desktop
@@ -197,6 +199,7 @@
     papirus-icon-theme
     qemu_kvm
     qmk
+    spice-gtk
     syncthing
     syncthingtray
     solaar
