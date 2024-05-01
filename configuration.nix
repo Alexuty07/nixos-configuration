@@ -129,7 +129,7 @@
   };
 
   # Touchpad support
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
 
   # Virtualization with virt-manager
   virtualisation.libvirtd.enable = true;
