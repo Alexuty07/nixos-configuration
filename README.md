@@ -1,5 +1,5 @@
 <h1 align="center">
-          <img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nix-snowflake.svg" width="160px" height="160px" />
+          <img src="https://alexuty.crd.co/assets/images/image10.svg" width="160px" height="160px" />
      <!-- <img src="/.github/assets/lucas.png" -->
       <br>
   Álex's NixOS Configuration
@@ -29,7 +29,7 @@
  - Bootloader: systemd-boot
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
- - Keymaps: ANSI QWERTY English (US), and ISO QWERTY Spanish (ES). Switch with Meta + Space
+ - Keymaps: ISO QWERTY Spanish (ES), ANSI QWERTY English (US), Switch with Meta + Space
  - Browser: Librewolf
  - Terminal: Konsole & Yakuake
 
