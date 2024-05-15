@@ -176,14 +176,21 @@
       tetrio-desktop
       texliveFull
       timer
-      vesktop
       vlc
+      vesktop
       waydroid
     ];
   };
 
   # Steam
   programs.steam.enable = true;
+
+  # Overlays
+  nixpkgs.overlays = [(final: prev: {
+    vesktop = prev.vesktop.override {
+      withSystemVencord = false;
+    };
+  })];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
