@@ -207,6 +207,8 @@
     neofetch
     nerdfonts
     nfs-utils
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
     papirus-icon-theme
     qemu_kvm
     qmk
