@@ -25,12 +25,12 @@
 </p>
 
 ## Information
- - Garbage Collection: Weekly
+ - File System: EXT4
  - Bootloader: systemd-boot
  - Shell: zsh (with p10k)
  - Deskop Environment: KDE Plasma 6
  - Keymaps: ISO QWERTY Spanish (ES), ANSI QWERTY English (US), Switch with Meta + Space
- - Browser: Librewolf
+ - Browser: Firefox
  - Terminal: Konsole & Yakuake
 
 ### Todo
