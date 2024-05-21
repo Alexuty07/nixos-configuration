@@ -32,7 +32,3 @@
  - Keymaps: ISO QWERTY Spanish (ES), ANSI QWERTY English (US), Switch with Meta + Space
  - Browser: Firefox
  - Terminal: Konsole & Yakuake
-
-### Todo
- - Split the config into multiple modules such as one for programs, one for services, one for system settings, etc.
- - Start using homemanager to manage plasma and other programs
