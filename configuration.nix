@@ -35,7 +35,7 @@
   ];
 
   # Hostname
-   networking.hostName = "nixos";
+   networking.hostName = "primus";
 
   # KDE Partition Manager
   programs.partition-manager.enable = true;
