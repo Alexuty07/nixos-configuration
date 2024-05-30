@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ];
+  imports = [
+    ./hardware-configuration.nix
+    ./networking.nix
+  ];
 
   # Bootloader (UEFI)
   boot.loader.systemd-boot.enable = true;
@@ -34,9 +37,6 @@
     xorg.libX11
   ];
 
-  # Hostname
-   networking.hostName = "primus";
-
   # KDE Partition Manager
   programs.partition-manager.enable = true;
 
@@ -44,10 +44,6 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-
-
-  # WLAN
-  networking.networkmanager.enable = true;
 
   # Tailscale
   services.tailscale.enable = true;
@@ -226,18 +222,6 @@
   # GnuPG
   programs.gnupg.agent.enable = true;
   services.pcscd.enable = true;
-
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [ 53317 ]; # LocalSend
-    allowedTCPPortRanges = [
-      { from = 1714; to = 1764; } # KDE Connect
-    ];
-    allowedUDPPorts = [ 53317 ]; # LocalSend
-    allowedUDPPortRanges = [
-      { from = 1714; to = 1764; } # KDE Connect
-    ];
-  };
 
   system.stateVersion = "23.11";
 
