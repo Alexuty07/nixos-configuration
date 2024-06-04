@@ -10,6 +10,11 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/primus
+        ./shell
+        ./system
+        ./desktop
+        ./desktop/autologin.nix
+        ./desktop/plasma.nix
       ];
     };
   };
