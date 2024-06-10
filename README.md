@@ -4,6 +4,7 @@
       <br>
   Álex's NixOS Configuration
 </h1>
+<h2 align="center">This repo has been moved to <a href="https://git.alexuty.me/Alexuty/nixos-configuration">Gitea</a></h2>
 <p align="center">
   Inspired by <a href=https://github.com/sioodmy/dotfiles>sioodmy's dotfiles</a><br>
   Thanks to <a href=https://github.com/vimjoyer>vimjoyer</a> for many of the starter configurations and excellent tutorial videos.
